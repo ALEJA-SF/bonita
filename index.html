@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#fff4f1">
+    <title>Para Carla ♡</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <div class="particles" id="particles"></div>
+
+    <header class="topbar">
+        <div class="logo">
+            para Carla <span>♡</span>
+        </div>
+
+        <button class="music-btn" id="musicBtn" aria-label="Activar música">
+            ♫
+        </button>
+    </header>
+
+    <main>
+
+        <section class="scene active" id="scene1">
+            <div class="hero-content">
+                <div class="eyebrow">ESTO ES PARA TI</div>
+
+                <h1>
+                    Hola,
+                    <span>Carla.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Sé que quizá no esperabas encontrarte con algo así,
+                    pero hice este pequeño lugar pensando en ti.
+                </p>
+
+                <p class="hero-special">
+                    Porque sí... eres bonita. 🌷<br>
+                    Tienes unos ojos muy lindos y una forma de ser
+                    que me gusta tal cual eres.
+                </p>
+
+                <button class="primary-btn next-btn" data-next="scene2">
+                    Descubrir <span>✨</span>
+                </button>
+
+                <div class="little-note">
+                    hice esto especialmente para ti ♡
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span></span>
+            </div>
+        </section>
+
+
+        <section class="scene" id="scene2">
+
+            <div class="scene-inner mascot-section">
+
+                <div class="mascot-bubble" id="speech">
+                    ¡Hola, Carla! 🐰
+                </div>
+
+                <div class="bunny" id="bunny">
+
+                    <div class="ear ear-left"></div>
+                    <div class="ear ear-right"></div>
+
+                    <div class="bunny-head">
+
+                        <div class="eye eye-left">
+                            <span></span>
+                        </div>
+
+                        <div class="eye eye-right">
+                            <span></span>
+                        </div>
+
+                        <div class="cheek cheek-left"></div>
+                        <div class="cheek cheek-right"></div>
+
+                        <div class="nose"></div>
+
+                        <div class="mouth">
+                            <span></span>
+                        </div>
+
+                    </div>
+
+                    <div class="bunny-body"></div>
+
+                    <div class="paw paw-left"></div>
+                    <div class="paw paw-right"></div>
+
+                </div>
+
+                <div class="mascot-text">
+                    <div class="eyebrow">MI PEQUEÑA AYUDANTE</div>
+
+                    <h2>
+                        Carla, tengo algo
+                        <span>que decirte.</span>
+                    </h2>
+
+                    <p id="mascotText">
+                        Pero antes... quiero enseñarte algunas cosas que me gustan de ti.
+                    </p>
+
+                    <button class="secondary-btn" id="talkBtn">
+                        Hablar con ella ✨
+                    </button>
+
+                    <button class="text-btn next-btn" data-next="scene3">
+                        Continuar →
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="scene" id="scene3">
+
+            <div class="scene-inner discovery">
+
+                <div class="section-heading">
+                    <div class="eyebrow">PEQUEÑAS COSAS</div>
+
+                    <h2>
+                        Hay cosas de ti que
+                        <span>me gustan mucho.</span>
+                    </h2>
+
+                    <p>
+                        Toca cada tarjeta para descubrirlas.
+                    </p>
+                </div>
+
+                <div class="cards">
+
+                    <button class="info-card" data-message="Eres bonita, Carla. Pero no hablo solamente de tu apariencia. Hay algo en tu forma de ser que hace que seas aún más bonita.">
+                        <span class="card-number">01</span>
+                        <span class="card-icon">🌷</span>
+                        <strong>Eres bonita</strong>
+                        <small>Toca para descubrir</small>
+                    </button>
+
+                    <button class="info-card" data-message="Tienes unos ojos muy lindos. De esos que llaman la atención sin que tengas que hacer absolutamente nada.">
+                        <span class="card-number">02</span>
+                        <span class="card-icon">✨</span>
+                        <strong>Tus ojos</strong>
+                        <small>Toca para descubrir</small>
+                    </button>
+
+                    <button class="info-card" data-message="Y algo que me gusta mucho es que no necesito que cambies. Me gustas tal cual eres, con tu forma de ser, tus ocurrencias y todo lo que te hace ser tú.">
+                        <span class="card-number">03</span>
+                        <span class="card-icon">♡</span>
+                        <strong>Tal como eres</strong>
+                        <small>Toca para descubrir</small>
+                    </button>
+
+                </div>
+
+                <div class="card-message" id="cardMessage">
+                    Toca una tarjeta ♡
+                </div>
+
+                <button class="primary-btn next-btn" data-next="scene4">
+                    Tengo una misión para ti 💗
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="scene" id="scene4">
+
+            <div class="scene-inner game-section">
+
+                <div class="section-heading">
+
+                    <div class="eyebrow">MINI MISIÓN</div>
+
+                    <h2>
+                        Carla, ayúdame a encontrar
+                        <span>tres corazones.</span>
+                    </h2>
+
+                    <p>
+                        Están escondidos por aquí...
+                        toca los que encuentres. 💕
+                    </p>
+
+                </div>
+
+                <div class="heart-game" id="heartGame">
+
+                    <button class="hidden-heart heart-one">♡</button>
+                    <button class="hidden-heart heart-two">♡</button>
+                    <button class="hidden-heart heart-three">♡</button>
+
+                    <div class="game-center">
+                        <span id="heartCount">0</span>
+                        <small>de 3</small>
+                    </div>
+
+                </div>
+
+                <div class="game-message" id="gameMessage">
+                    Pista: los corazones están cerca... 👀
+                </div>
+
+                <button class="primary-btn next-btn hidden-next" id="gameNext" data-next="scene5">
+                    Encontré los tres 💗
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="scene" id="scene5">
+
+            <div class="scene-inner letter-section">
+
+                <div class="letter">
+
+                    <div class="letter-top">
+                        <span>para Carla</span>
+                        <span>♡</span>
+                    </div>
+
+                    <div class="letter-content">
+
+                        <div class="letter-flower">
+                            ✿
+                        </div>
+
+                        <h2>
+                            Quería decirte algo...
+                        </h2>
+
+                        <p>
+                            Me pareces una persona muy bonita.
+                            Me encantan tus ojos, tu forma de ser
+                            y esas pequeñas cosas que te hacen ser tú.
+                        </p>
+
+                        <p>
+                            Y aunque no ha pasado tanto tiempo,
+                            de alguna manera te fuiste convirtiendo
+                            en alguien importante para mí.
+                        </p>
+
+                        <div class="big-message">
+                            Me gustas. <span>♡</span>
+                        </div>
+
+                        <p>
+                            Me gustas tal cual eres.
+                            No quiero cambiar nada de ti.
+                            Simplemente me gusta conocerte, hablar contigo,
+                            compartir momentos y tenerte cerca.
+                        </p>
+
+                        <p>
+                            Hice todo esto porque quería que supieras
+                            lo especial que te has vuelto para mí
+                            y, sobre todo, quería regalarte una sonrisa.
+                        </p>
+
+                        <div class="signature">
+                            Con cariño,<br>
+                            <strong>Alejandro</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button class="primary-btn next-btn" data-next="scene6">
+                    Hay una última cosa... 🌷
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="scene" id="scene6">
+
+            <div class="scene-inner final-section">
+
+                <div class="final-decoration">
+                    ♡
+                </div>
+
+                <div class="eyebrow">
+                    CARLA, AHORA TE TOCA A TI
+                </div>
+
+                <h2>
+                    ¿Te gustaría que
+                    <span>sigamos descubriendo esto juntos?</span>
+                </h2>
+
+                <p>
+                    Sin prisas, sin presión.
+                    Solo tú y yo, viendo qué bonito puede salir de esto.
+                </p>
+
+                <div class="final-buttons">
+
+                    <button class="yes-btn" id="yesBtn">
+                        Sí, me gustaría 💗
+                    </button>
+
+                    <button class="think-btn" id="thinkBtn">
+                        Quiero pensarlo 🌷
+                    </button>
+
+                </div>
+
+                <div class="final-response" id="finalResponse"></div>
+
+                <div class="final-hearts">
+                    ♡　♡　♡
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <audio id="music" loop>
+        <source src="Herencia De Grandes - Ya Borracho [Official Video].mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
